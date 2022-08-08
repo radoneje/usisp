@@ -1,0 +1,699 @@
+input:focus, input:active {
+  outline: none !important
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Light.eot");
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Light.eot?#iefix") format("embedded-opentype"), url("fonts/sbsansdisplay/SBSansDisplay-Light.svg#SBSansDisplay-Light") format("svg"), url("fonts/sbsansdisplay/SBSansDisplay-Light.ttf") format("truetype"), url("fonts/sbsansdisplay/SBSansDisplay-Light.woff") format("woff"), url("fonts/sbsansdisplay/SBSansDisplay-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Regular.eot");
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/sbsansdisplay/SBSansDisplay-Regular.svg#SBSansDisplay-Regular") format("svg"), url("fonts/sbsansdisplay/SBSansDisplay-Regular.ttf") format("truetype"), url("fonts/sbsansdisplay/SBSansDisplay-Regular.woff") format("woff"), url("fonts/sbsansdisplay/SBSansDisplay-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Semibold.eot");
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/sbsansdisplay/SBSansDisplay-Semibold.svg#SBSansDisplay-Semibold") format("svg"), url("fonts/sbsansdisplay/SBSansDisplay-Semibold.ttf") format("truetype"), url("fonts/sbsansdisplay/SBSansDisplay-Semibold.woff") format("woff"), url("fonts/sbsansdisplay/SBSansDisplay-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Thin.eot");
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/sbsansdisplay/SBSansDisplay-Thin.svg#SBSansDisplay-Thin") format("svg"), url("fonts/sbsansdisplay/SBSansDisplay-Thin.ttf") format("truetype"), url("fonts/sbsansdisplay/SBSansDisplay-Thin.woff") format("woff"), url("fonts/sbsansdisplay/SBSansDisplay-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal
+}
+
+@font-face {
+  font-family: 'SBSansDisplay';
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Bold.eot");
+  src: url("fonts/sbsansdisplay/SBSansDisplay-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/sbsansdisplay/SBSansDisplay-Bold.svg#SBSansDisplay-Bold") format("svg"), url("fonts/sbsansdisplay/SBSansDisplay-Bold.ttf") format("truetype"), url("fonts/sbsansdisplay/SBSansDisplay-Bold.woff") format("woff"), url("fonts/sbsansdisplay/SBSansDisplay-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal
+}
+@font-face {
+  font-family: 'SBSansText';
+  src: url("fonts/sbsanstext/SBSansText-Bold.eot");
+  src: url("fonts/sbsanstext/SBSansText-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/sbsanstext/SBSansText-Bold.svg#SBSansText-Bold") format("svg"), url("fonts/sbsanstext/SBSansText-Bold.ttf") format("truetype"), url("fonts/sbsanstext/SBSansText-Bold.woff") format("woff"), url("fonts/sbsanstext/SBSansText-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SBSansText';
+  src: url("fonts/sbsanstext/SBSansText-Light.eot");
+  src: url("fonts/sbsanstext/SBSansText-Light.eot?#iefix") format("embedded-opentype"), url("fonts/sbsanstext/SBSansText-Light.svg#SBSansText-Light") format("svg"), url("fonts/sbsanstext/SBSansText-Light.ttf") format("truetype"), url("fonts/sbsanstext/SBSansText-Light.woff") format("woff"), url("fonts/sbsanstext/SBSansText-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SBSansText';
+  src: url("fonts/sbsanstext/SBSansText-Regular.eot");
+  src: url("fonts/sbsanstext/SBSansText-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/sbsanstext/SBSansText-Regular.svg#SBSansText-Regular") format("svg"), url("fonts/sbsanstext/SBSansText-Regular.ttf") format("truetype"), url("fonts/sbsanstext/SBSansText-Regular.woff") format("woff"), url("fonts/sbsanstext/SBSansText-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SBSansText';
+  src: url("fonts/sbsanstext/SBSansText-Semibold.eot");
+  src: url("fonts/sbsanstext/SBSansText-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/sbsanstext/SBSansText-Semibold.svg#SBSansText-Semibold") format("svg"), url("fonts/sbsanstext/SBSansText-Semibold.ttf") format("truetype"), url("fonts/sbsanstext/SBSansText-Semibold.woff") format("woff"), url("fonts/sbsanstext/SBSansText-Semibold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SBSansText';
+  src: url("fonts/sbsanstext/SBSansText-Thin.eot");
+  src: url("fonts/sbsanstext/SBSansText-Thin.eot?#iefix") format("embedded-opentype"), url("fonts/sbsanstext/SBSansText-Thin.svg#SBSansText-Thin") format("svg"), url("fonts/sbsanstext/SBSansText-Thin.ttf") format("truetype"), url("fonts/sbsanstext/SBSansText-Thin.woff") format("woff"), url("fonts/sbsanstext/SBSansText-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal; }
+
+body {
+  font-family: "SBSansText", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 14px;
+  color: #353F47;
+  text-align: left;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+a {
+  color: #D2D55F
+}
+
+.mainWr{
+  padding: 24px;
+  background-image: url(../img/bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.videoBox{
+  max-width: 600px;
+  margin:0 auto;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+
+
+}
+
+.videoWrapper iframe, .videoWrapper video, .videoWrapper #my-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.mainTower{
+  max-width: 1200px;
+  text-align: center;
+  margin: 0 auto;
+}
+.head{
+  font-size: 16px;
+  line-height: 22px;
+}
+.body{
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#my-video, #my-video video {
+  border-radius: 8px
+}
+
+.playerTiming {
+  font-size: 16px;
+  line-height: 22px;
+  padding: 24px
+}
+
+.playerTimingItem {
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 8px;
+  align-items: center
+}
+
+.playerTimingItem.active {
+  color: #D2D55F
+}
+
+.playerTimingItemTime {
+  width: 5em;
+  box-sizing: border-box;
+  font-weight: bold
+}
+
+.playerTimingItemText {
+  width: calc(100% - 5em);
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 16px
+}
+
+.playerTimingSubItem {
+  margin-left: 2em;
+  margin-bottom: 8px;
+  font-size: 12px;
+  line-height: 14px
+}
+
+.playerTimingItem span, playerTimingSubItem span {
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 1em;
+  width: 3em;
+  text-align: right;
+  display: inline-block
+}
+
+.playerChatWr {
+  width: 100%;
+  height: 100%
+}
+
+.playerChatPole {
+  position: relative
+}
+
+.playerChatPoleWr {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px
+}
+
+.btn.playerChatSend {
+  cursor: pointer
+}
+
+.playerChatInputForm {
+  display: flex;
+  align-items: center;
+  background: #F1F0F0;
+  position: relative
+}
+
+.playerChatInputFormLoaderWr {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #F1F0F0
+}
+
+.playerChatInputFormLoader {
+  height: 100%;
+  animation: laod 30s infinite;
+  transition: width 15s;
+  background-color: #D2D55F
+}
+
+.playerChatInputForm input {
+  width: calc(100% - 60px);
+  box-sizing: border-box;
+  padding: 10px 10px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  padding-left: 30px;
+  color: #353F47
+}
+
+.btn.playerChatSend svg {
+  width: 30px;
+  margin-left: 10px;
+  margin-top: 5px
+}
+
+.btn.playerChatSend path {
+  fill: #D2D55F
+}
+
+.playerChatPole {
+  height: calc(100% - 101px);;
+  overflow-y: scroll;
+  overflow-x: hidden
+}
+
+.playerChatItem {
+  border-radius: 8px;
+  background-color: rgba(210, 213, 95, 0.5);
+  margin-bottom: 10px;
+  padding: 10px
+}
+
+.playerChatTitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 1em
+}
+
+.playerChatText {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  word-break: break-word
+}
+
+.playerChatDate {
+  text-align: right
+}
+
+.mainContent.margin {
+  min-height: 350px
+}
+
+.mainContent.player .mainTitle {
+  display: none
+}
+
+.playerChatDate.btnWr {
+  display: flex;
+  justify-content: flex-end
+}
+
+.adminToQBtn {
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 8px;
+  color: #7C8288;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5);
+  transition: color .5s ease
+}
+
+.adminDeleteBtn {
+  border: 1px solid white;
+  padding: 4px;
+  border-radius: 8px;
+  color: #ff000082;
+  cursor: pointer;
+  margin-right: 10px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, .5);
+  transition: color .5s ease
+}
+
+.adminToQBtn:hover {
+  color: #353F47
+}
+
+.adminDeleteBtn:hover {
+  color: red
+}
+
+.adminSect .playerChatWr {
+  height: calc(100vh - 140px)
+}
+
+.playerHead {
+  display: none
+}
+
+.playerChatBox .playerCtrl {
+  display: flex;
+  height: auto;
+  width: 100%;
+  position: unset;
+  box-sizing: border-box;
+  padding: 0 20px
+}
+
+.goToReg {
+  margin-top: 20px
+}
+
+.mainTitle {
+  width: calc(100% - 690px)
+}
+
+.playerTitle h1 {
+  padding-left: 70px;
+  padding-top: 20px
+}
+
+.archiveTitle {
+  margin: 24px 0;
+  margin-top: 60px
+}
+
+.video-js .vjs-time-control {
+  display: block
+}
+
+.video-js .vjs-current-time, .vjs-current-time {
+  display: block !important
+}
+
+.video-js .vjs-remaining-time {
+  display: none
+}
+
+footer .mainLogo {
+  margin-left: 10px
+}
+
+#countDownTimer {
+  position: absolute;
+  bottom: 24px;
+  left: 27px;
+  font-size: 28px;
+  line-height: 35px
+}
+
+@media (min-width: 1800px) {
+  .regForm {
+    width: calc(1366px / 2 - (48px * 2));
+    right: calc((100% - 1366px) / 2 - 48px)
+  }
+
+  .mainTitle {
+    margin: 64px 0
+  }
+
+  .aboutForm {
+    margin: 64px 0
+  }
+}
+
+@media (max-width: 1300px) {
+  .playerTiming {
+    padding: 24px 12px;
+  }
+
+  .regForm {
+    right: 48px;
+    top: 91px
+  }
+
+  .mainLogo {
+    left: 40px
+  }
+
+  .regForm {
+    position: static;
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto
+  }
+
+  .regFormBody {
+    height: auto;
+    display: block
+  }
+
+  .mainTitle {
+    margin: 64px 48px;
+    width: inherit
+  }
+
+  .aboutFormTitle {
+    margin-top: 48px
+  }
+
+  .aboutForm {
+    margin: 48px 48px
+  }
+
+  .bumper {
+    height: 170px
+  }
+
+  header .bumper {
+    padding: 0
+  }
+
+  .playerTitle h1 {
+    padding: 0
+  }
+
+  h1 {
+    line-height: 42px;
+    font-weight: 600;
+    font-size: 32px
+  }
+
+  .playerTitle {
+    display: none
+  }
+
+  .mainContent.player .mainTitle {
+    display: block;
+    margin: 48px 48px
+  }
+
+  .mainContent {
+    min-height: auto !important
+  }
+
+  .autoscroll {
+    padding-top: 0 !important
+  }
+}
+
+@media (max-width: 980px) {
+  #countDownTimer {
+    top: inherit;
+    bottom: 24px;
+    left: 27px;
+    font-size: 18px;
+    line-height: 26px
+  }
+
+  .playerTimingSubItem {
+    margin-left: 2em;
+    margin-bottom: 8px;
+    margin-top: 10px
+  }
+
+  .playerTimingItem span, playerTimingSubItem span {
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 1em;
+    width: 3em;
+    text-align: right;
+    display: block;
+    margin-left: 0;
+    text-align: left
+  }
+
+  .mainContent.player .mainTitle {
+    margin: 26px
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 28px
+  }
+
+  .aboutFormButton {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 18px;
+    line-height: 22px
+  }
+
+  .gradient {
+    height: 6px
+  }
+
+  .mainLogo .multiTitle {
+    width: 75%
+  }
+
+  .popUpTower {
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    padding: 24px;
+    box-shadow: none
+  }
+
+  .spkPopupTitle {
+    display: block
+  }
+
+  .spkPopupNameWr {
+    padding-left: 0
+  }
+
+  .spkPopupBioWr {
+    height: calc(100% - 400px)
+  }
+
+  .bumper {
+    height: 75px
+  }
+
+  .mainLogo {
+    top: 20px;
+    left: 14px
+  }
+
+  .mainLang {
+    right: 20px
+  }
+
+  .mainTitle, .aboutForm {
+    margin: 48px 24px
+  }
+
+  .mainDate {
+    margin-top: 24px
+  }
+
+  .regFormHeader {
+    height: 64px;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex !important
+  }
+
+  .regFormBody {
+    padding: 12px;
+    padding-bottom: 24px
+  }
+
+  .googleCalButton {
+    font-size: 18px;
+    line-height: 21px
+  }
+
+  .aboutFormTitle {
+    margin-top: 0;
+    font-size: 24px;
+    line-height: 28px
+  }
+
+  .aboutFormTitle:after {
+    height: 4px;
+    bottom: -0.5em
+  }
+
+  .aboutFormLid {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    margin-top: 48px
+  }
+
+  .regBtn {
+    margin-top: 40px
+  }
+
+  .speaker {
+    width: 50%;
+    cursor: pointer
+  }
+
+  .footerText {
+    left: 160px;
+    top: 16px
+  }
+
+  .playerBody {
+    display: block
+  }
+
+  .playerObj {
+    width: 100%
+  }
+
+  .playerChatBox {
+    width: 100%;
+    max-height: calc(100vh - 60px)
+  }
+
+  .playerChatPoleWr {
+    padding: 20px 0
+  }
+
+  .playerHead {
+    display: none
+  }
+
+  .playerBody .playerCtrl {
+    display: flex;
+    width: 100%;
+    position: static
+  }
+
+  .playerChatBox .playerCtrl {
+    display: none
+  }
+
+  .playerHead .playerCtrl {
+    display: none
+  }
+
+  .playerChatPole {
+    max-height: calc(100vh - 80px - 38px);
+    margin-right: -20px;
+    padding-right: 20px
+  }
+
+  .playerChatPoleWr {
+    position: static
+  }
+
+  .playerCtrlItem {
+    margin-top: 20px
+  }
+
+  .archiveTitle {
+    margin-top: 48px;
+    font-size: 18px;
+    line-height: 22px
+  }
+}
+
+@media (max-width: 650px) {
+  .speaker {
+    width: 100%
+  }
+}
+
+@media (max-width: 550px) {
+  .footerText {
+    font-size: 10px;
+    line-height: 16px;
+    padding-right: 20px
+  }
+}
+
+@media (max-width: 380px) {
+  footer .mainLogo {
+    display: none
+  }
+
+  .footerText {
+    font-size: 10px;
+    line-height: 16px;
+    left: 20px
+  }
+}
